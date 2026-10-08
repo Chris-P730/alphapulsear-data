@@ -1,0 +1,57 @@
+name: AlphaPulsear dagelijkse Volume-data
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 19 * * 1-5'
+permissions:
+  contents: write
+concurrency:
+  group: alphapulsear-volume
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Installeer browser
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Haal actuele Euronext-data op
+        env:
+          CI: 'true'
+        run: python euronext_download.py
+      - name: Neem alleen gevalideerde bestanden over
+        run: |
+          python - <<'PY'
+          import csv, pathlib, shutil
+          base=pathlib.Path('.')
+          with (base/'downloads'/'STATUS.csv').open(encoding='utf-8-sig',newline='') as f:
+              status=list(csv.DictReader(f,delimiter=';'))
+          if len(status)!=30:
+              raise SystemExit(f'Onvolledige downloadronde: {len(status)}/30')
+          for row in status:
+              if row['Status']!='GEVALIDEERD':
+                  print('NIET GELUKT:',row['Aandeel'],row['Details'])
+                  continue
+              filename=row['Details'].split(';',1)[0]
+              source=base/'downloads'/filename
+              if not source.exists():raise SystemExit('Ontbrekend gevalideerd bestand '+filename)
+              shutil.copy2(source,base/filename)
+          PY
+      - name: Controleer historische volumes en maak compact bestand
+        run: python compute_volume.py
+      - name: Publiceer alleen gecontroleerde wijzigingen
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- '*.csv' AlphaPulsear_V1_Volume_AUDIT.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update AlphaPulsear volume history and indicators'
+            git push
+          fi

@@ -2,153 +2,153 @@
   "AALBERTS.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "ABN_AMRO.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "ADYEN.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "AEGON.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "AHOLD_DELHAIZE.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "AKZO_NOBEL.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "ARCELORMITTAL.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "ASML.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "ASM_INTERNATIONAL.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "ASR_NEDERLAND.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "BESI.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "CVC_CAPITAL.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "DSM_FIRMENICH.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "EXOR.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "HEINEKEN.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "IMCD.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "ING.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "INPOST.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "KPN.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "NN_GROUP.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "PHILIPS.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "PROSUS.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "RELX.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "SBM_OFFSHORE.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "SHELL.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "UMG.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "UNILEVER.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "WDP.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "WOLTERS_KLUWER.csv": {
     "status": "BASISDATA_GELDIG",
     "days": 509,
-    "latest": "2026-10-07"
+    "latest": "2026-10-08"
   },
   "_meta": {
-    "created_utc": "2026-10-08T19:47:21.692120+00:00",
+    "created_utc": "2026-10-09T19:46:45.087280+00:00",
     "files_ok": 29,
     "files_total": 29,
-    "newest_common": "2026-10-07",
+    "newest_common": "2026-10-08",
     "score_status": "NIET_BEREKEND: vergrendelde V1-scoreomzetting en indexdekking niet gevalideerd",
     "note": "Geen officiële Volume-score. Percentiel is descriptief op basis van signed VR."
   }
